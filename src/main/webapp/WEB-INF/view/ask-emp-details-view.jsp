@@ -1,3 +1,4 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <body>
@@ -5,11 +6,19 @@
 
 <br>
 <br>
-<form action="showDetails" method="get">
-    <input type="text" name="employeeName"
-    placeholder="Write here your name"/>
 
-    <input type="submit"/>
-</form>
+<form:form action="showDetails" modelAttribute="employee">
+
+    Name <form:input path="name"></form:input>
+    <br>
+    <br>
+    Surname <form:input path="surname"></form:input>
+    <br>
+    <br>
+    Salary <form:input path="salary"></form:input>
+    <br>
+    <br>
+    <input type="submit" value="OK">
+</form:form>
 </body>
 </html>
