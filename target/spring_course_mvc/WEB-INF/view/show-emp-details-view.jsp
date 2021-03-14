@@ -24,7 +24,11 @@ Your language(s):
     <li> ${lang} </li>
     </c:forEach>
 </ul>
-<br>
+<br><br>
+Phone Number: ${employee.phoneNumber}
+<br><br>
+Email: ${employee.email}
+<br><br>
 
 </body>
 </html>
