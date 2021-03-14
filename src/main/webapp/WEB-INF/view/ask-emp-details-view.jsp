@@ -37,6 +37,10 @@
     <form:input path="phoneNumber"></form:input>
     <form:errors path="phoneNumber"/>
     <br><br>
+    Email
+    <form:input path="email"></form:input>
+    <form:errors path="email"/>
+    <br><br>
     <input type="submit" value="OK">
 </form:form>
 </body>
